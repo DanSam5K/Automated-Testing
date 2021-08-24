@@ -25,3 +25,30 @@ it ('reverse string', () => {
     expect(result).not.toBe("man")
 })
    
+describe('my Calculator', () => {
+    let firstNum = 10, secondNum = 5
+    const calculator = new Calculator();
+
+    const addNum = calculator.add(firstNum, secondNum);
+    const subtractNum = calculator.subtract(firstNum, secondNum)
+    const divideNum = calculator.divide(firstNum, secondNum)
+    const multiplyNum = calculator.multiply(firstNum, secondNum)
+
+    test('Add numbers', () => {
+      expect(addNum).toBe(15);
+    });
+  
+    test('Subtract numbers', () => {
+      expect(subtractNum).toBe(5);
+    });
+
+    test('Divide numbers', () => {
+      expect(divideNum).toBe(2);
+    });
+
+    test('Subtract numbers', () => {
+      expect(multiplyNum).toBe(50);
+    });
+});
+
+
