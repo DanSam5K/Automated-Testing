@@ -51,4 +51,11 @@ describe('my Calculator', () => {
     });
 });
 
+it ('Capitalize string', () => {
+    let str = "man";
 
+    const result = capitalizeString(str);
+
+    expect(result).toBe('Man')
+    expect(result).not.toBe("man")
+})
