@@ -3,6 +3,8 @@ const { string } = require('yargs');
 const stringLength  = require('./stringlength');
 const stringReverse  = require('./stringreverse');
 const Calculator = require('./calculator');
+const capitalizeString = require('./capitalize');
+
 
 
 it ('Takes string and return it characters count', () => {
